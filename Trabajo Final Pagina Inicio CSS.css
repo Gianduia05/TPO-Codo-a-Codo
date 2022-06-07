@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+/* Aca es la seccion de barra de navegacion con  flexbox*/
+
+.formato {
+    margin: 0 auto;
+    padding: 0 1em;
+
+}
+
+
+.navbar {
+    padding-bottom: .3em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid hsl(0, 0%, 0%)
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background:hsl(0, 0%, 15%);
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: .6em 1em;
+    font-family: Montserrat;
+}
+
+.navbar li a:hover {
+    background:hsl(0, 59%, 46%);
+    transform: translate(-10%,-10%);
+    transition: all 0.6s ;
+
+}
+
+i {
+    color:hsl(0, 0%, 100%);
+    margin-left: 10px;
+}
+
+.titulo{
+
+    display: center;
+    text-align: center;
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-decoration: none;
+
+
+}
+
+
+/*acá aplicamos el flex*/
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navbar li {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+
+/* Aca comienza la seccion de tarjetas con flexbox que obtendremos de flebox clase 12*/
+
+.contenedor-noticias {
+    width: 95%;
+    margin: auto;
+    padding: 0.8 0.8 0.8 0.8;
+}
+
+@media screen and (min-width: 52em) {
+    .contenedor-noticias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+} /*fin de media*/
+
+.entrada-noticia a {
+    display: inline-block;
+    background-color: hsl(0, 59%, 46%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-family: Arial;
+    }
+
+.entrada-noticia a:hover {
+    background-color: hsl(0, 0%, 100%);
+    color:  hsl(0, 59%, 46%);
+    box-shadow: 3px 3px 3px rgb(109, 106, 106);
+}
+
+figure {
+    margin:0;
+}
+
+img {
+    display: block;
+    border:0;
+    width: 100%;
+    height: auto;
+}
+
+/*empezamos a darle flex*/
+
+.entrada-noticia {
+    display: inline-block;
+    background: hsl(0, 0%, 100%);
+    margin-bottom: 2em;
+    width: 80%;
+    /*box-shadow: 1px 1px 1px 1px #000;*/
+}
+.entrada-noticia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Titulo */
+
+
+h1 {
+    display: center;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 3px 3px 2px #bb3030;
+    color: #000;
+    text-decoration: none; /*decoración texto*/
+    font-family: Montserrat;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+
+h2{
+    display: center;
+    text-align: center;
+    padding: 10px;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+p{
+    font-family:Montserrat;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+
+

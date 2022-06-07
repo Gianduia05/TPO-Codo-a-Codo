@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+/* Aca es la seccion de barra de navegacion con  flexbox*/
+
+.formato {
+    margin: 0 auto;
+    padding: 0 1em;
+
+}
+
+
+.navbar {
+    padding-bottom: .3em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid hsl(0, 0%, 0%)
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background:hsl(0, 0%, 15%);
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: .6em 1em;
+    font-family: Montserrat;
+
+}
+
+
+.navbar li a:hover {
+    background:hsl(0, 59%, 46%);
+    transform: translate(-10%,-10%);
+    transition: all 0.6s ;
+
+}
+
+i {
+    color:hsl(0, 0%, 100%);
+    margin-left: 10px;
+}
+
+.titulo{
+
+    display: center;
+    text-align: center;
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-decoration: none;
+
+
+}
+
+/*acá aplicamos el flex*/
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navbar li {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+/* La parte de edicion del formulario */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contactform{
+    background-color: #fff;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+header{
+    width: 100%;
+    background-color: #bb3030;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* esta parte aplica para poner una imagen al formulario*/
+
+header span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    padding: 2.5rem;
+    color: #fff;
+}
+
+
+.contact{
+    padding: .8rem;
+    overflow: hidden;
+    color:hsl(0, 0%, 25%);
+}
+
+.contact label, .contact input , .contact textarea {
+
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+
+.contact label {
+    font-weight: 700;
+}
+
+.contact input:not([ type = "submit"]) , .contact textarea {
+    border: none;
+    border-bottom: 2px solid #586423;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: hsl(0, 0%, 25%);
+    position: relative;
+    transition: .3s ease all;
+
+}
+
+
+.contact textarea {
+    min-height: 100px;
+}
+
+input [type ="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: #670101;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form_control input:focus {
+	outline: 0;
+	border-color: #d41e1e;
+}
+
+.form_control textarea:focus {
+	outline: 0;
+	border-color: #d41e1e;
+}
+
+
+
+
