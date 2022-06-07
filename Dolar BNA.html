@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="D:\CODO A CODO\Trabajo Final\Trabajo Final Datos Macroeconomicos CSS.css">
+    <link rel="stylesheet" href="D:\CODO A CODO\Trabajo Final\fontawesome-free-6.1.1-web\fontawesome-free-6.1.1-web\css\all.min.css"></link>
+
+
+    <title>Mundo Financiero | Datos Macro</title>
+
+</head>
+<body>
+
+    <div class="formato">
+        <nav class="navbar">
+            <ul>
+                <li><a href="D:\CODO A CODO\Trabajo Final\Trabajo Final Pagina Inicio.html" >Inicio<i class="fa-solid fa-house"></i></a> </li>
+                <li><a href="D:\CODO A CODO\Trabajo Final\Trabajo Final Instrumentos Financieros.html" >Instrumentos Financieros<i class="fa-solid fa-dollar-sign"></i></a></li>
+                <li><a href="D:\CODO A CODO\Trabajo Final\Trabajo Final Datos Macroeconomicos.html" >Datos Macroeconómicos<i class="fa-solid fa-chart-column"></i></a></li>
+            </ul>
+            <div class="titulo">Mundo Financiero</div>
+       </nav>
+     </div>
+
+
+<h1>Datos Macroeconomicos</h1>
+<h3>Fecha: 2022-05-27</h3>
+
+    <section class="variablesmacro">
+        <a class = "cartel">Dólar CCL <div class ="datos">210,70</div></a>
+        <a class = "cartel">Dólar MEP <div class ="datos">210,35</div></a>
+        <a class = "cartel">Dólar BNA Venta <div class ="datos">124,50</div> </a>
+        <a class = "cartel">Dólar Com 3500 <div class ="datos">119,11</div></a>
+        <a class = "cartel">IPC Abril <div class ="datos">6%</div></a>
+        <a class = "cartel">IPC EEUU Abril <div class ="datos">0,6%</div></a>
+        <a class = "cartel">Desempleo Arg Abril <div class ="datos">8,50%</div></a>
+        <a class = "cartel">Desempleo EEUU Abril <div class ="datos">3,60%</div></a>
+    </section>
+
+<section class ="datahistorica">
+    <h2> Datos históricos</h2>
+
+        <a href="D:\CODO A CODO\Trabajo Final\Dolar CCL.html" class = "linkvariable">Dólar CCL</a>
+        <a href="D:\CODO A CODO\Trabajo Final\Dolar MEP.html" class = "linkvariable" >Dólar MEP</a>
+        <a href="D:\CODO A CODO\Trabajo Final\Dolar BNA.html" class = "linkvariable" >Dólar BNA</a>
+        <a href="D:\CODO A CODO\Trabajo Final\Dolar 3500.html" class = "linkvariable">Dólar Com 3500</a>
+        <a href="D:\CODO A CODO\Trabajo Final\IPC Arg.html" class = "linkvariable">IPC Arg</a>
+        <a href="D:\CODO A CODO\Trabajo Final\IPC EEUU.html" class = "linkvariable">IPC EE.UU</a>
+        <a href="D:\CODO A CODO\Trabajo Final\Desempleo Arg.html" class = "linkvariable" >Desempleo Arg</a>
+        <a href="D:\CODO A CODO\Trabajo Final\Desempleo EEUU.html" class = "linkvariable" >Desempleo EEUU</a>
+
+    <h3> Dólar BNA Histórico</h3>
+    <h4> Coloque el rango de fechas deseado</h4>
+
+</section>
+
+<section class ="rangofechas">
+    <input id="date-start" type="text" value="2020-01-01"></input>
+    <input id="date-stop" type="text" value="2022-05-27"></input>
+    <button type="button" onclick="searchDateAlternative()">Buscar</button>
+</section>
+
+<section class ="tablas">
+<table id="table" class="table">
+<thead><tr class="columns"><th>Fecha</th><th>TC Compra</th><th>TC Venta</th></tr></thead>
+<tbody>
+    <tr><td>2022-05-27</td><td>118,5</td><td>124,5</td></tr>
+    <tr><td>2022-05-26</td><td>118,25</td><td>124,25</td></tr>
+    <tr><td>2022-05-24</td><td>118,25</td><td>124,25</td></tr>
+    <tr><td>2022-05-23</td><td>118</td><td>124</td></tr>
+    <tr><td>2022-05-20</td><td>117,75</td><td>123,75</td></tr>
+    <tr><td>2022-05-19</td><td>117,5</td><td>123,5</td></tr>
+    <tr><td>2022-05-17</td><td>117,25</td><td>123,25</td></tr>
+    <tr><td>2022-05-16</td><td>117</td><td>123</td></tr>
+    <tr><td>2022-05-13</td><td>117</td><td>123</td></tr>
+    <tr><td>2022-05-12</td><td>116,5</td><td>122,5</td></tr>
+    <tr><td>2022-05-11</td><td>116,25</td><td>122,25</td></tr>
+    <tr><td>2022-05-10</td><td>116</td><td>122</td></tr>
+    <tr><td>2022-05-09</td><td>115,75</td><td>121,75</td></tr>
+    <tr><td>2022-05-06</td><td>115,75</td><td>121,75</td></tr>
+    <tr><td>2022-05-05</td><td>115,25</td><td>121,25</td></tr>
+    <tr><td>2022-05-04</td><td>115,25</td><td>121,25</td></tr>
+    <tr><td>2022-05-03</td><td>115</td><td>121</td></tr>
+    <tr><td>2022-05-02</td><td>114,5</td><td>120,5</td></tr>
+    <tr><td>2022-04-29</td><td>114,25</td><td>120,25</td></tr>
+    <tr><td>2022-04-28</td><td>113,75</td><td>119,75</td></tr>
+    <tr><td>2022-04-27</td><td>113,75</td><td>119,75</td></tr>
+    <tr><td>2022-04-26</td><td>113,75</td><td>119,75</td></tr>
+    <tr><td>2022-04-25</td><td>113,5</td><td>119,5</td></tr>
+    <tr><td>2022-04-22</td><td>113,5</td><td>119,5</td></tr>
+    <tr><td>2022-04-21</td><td>113,25</td><td>119,25</td></tr>
+    <tr><td>2022-04-20</td><td>113</td><td>119</td></tr>
+    <tr><td>2022-04-19</td><td>112,75</td><td>118,75</td></tr>
+    <tr><td>2022-04-18</td><td>112,5</td><td>118,5</td></tr>
+    <tr><td>2022-04-13</td><td>112</td><td>118</td></tr>
+    <tr><td>2022-04-12</td><td>111,75</td><td>117,75</td></tr>
+    <tr><td>2022-04-11</td><td>111,75</td><td>117,75</td></tr>
+    <tr><td>2022-04-08</td><td>111,25</td><td>117,25</td></tr>
+    <tr><td>2022-04-07</td><td>111,25</td><td>117,25</td></tr>
+    <tr><td>2022-04-06</td><td>111</td><td>117</td></tr>
+    <tr><td>2022-04-05</td><td>110,75</td><td>116,75</td></tr>
+    <tr><td>2022-04-04</td><td>110,75</td><td>116,75</td></tr>
+    <tr><td>2022-04-01</td><td>110,25</td><td>116,25</td></tr>
+    <tr><td>2022-03-31</td><td>110</td><td>116</td></tr>
+    <tr><td>2022-03-30</td><td>110</td><td>116</td></tr>
+    <tr><td>2022-03-29</td><td>109,75</td><td>115,75</td></tr>
+    <tr><td>2022-03-28</td><td>109,75</td><td>115,75</td></tr>
+    <tr><td>2022-03-25</td><td>109,5</td><td>115,5</td></tr>
+    <tr><td>2022-03-23</td><td>109,5</td><td>115,5</td></tr>
+    <tr><td>2022-03-22</td><td>109,25</td><td>115,25</td></tr>
+    <tr><td>2022-03-21</td><td>109</td><td>115</td></tr>
+    <tr><td>2022-03-18</td><td>108,75</td><td>114,75</td></tr>
+    <tr><td>2022-03-17</td><td>108,5</td><td>114,5</td></tr>
+    <tr><td>2022-03-16</td><td>108,5</td><td>114,5</td></tr>
+    <tr><td>2022-03-15</td><td>108,5</td><td>114,5</td></tr>
+    <tr><td>2022-03-14</td><td>108,25</td><td>114,25</td></tr>
+    <tr><td>2022-03-11</td><td>108</td><td>114</td></tr>
+    <tr><td>2022-03-10</td><td>108</td><td>114</td></tr>
+    <tr><td>2022-03-09</td><td>108</td><td>114</td></tr>
+    <tr><td>2022-03-08</td><td>107,75</td><td>113,75</td></tr>
+    <tr><td>2022-03-07</td><td>107,75</td><td>113,75</td></tr>
+    <tr><td>2022-03-04</td><td>107,25</td><td>113,25</td></tr>
+    <tr><td>2022-03-03</td><td>107,25</td><td>113,25</td></tr>
+    <tr><td>2022-03-02</td><td>107</td><td>113</td></tr>
+    <tr><td>2022-02-25</td><td>106,5</td><td>112,5</td></tr>
+    <tr><td>2022-02-24</td><td>106,5</td><td>112,5</td></tr>
+    <tr><td>2022-02-23</td><td>106,5</td><td>112,5</td></tr>
+    <tr><td>2022-02-22</td><td>106,5</td><td>112,5</td></tr>
+    <tr><td>2022-02-21</td><td>106,25</td><td>112,25</td></tr>
+    <tr><td>2022-02-18</td><td>106</td><td>112</td></tr>
+    <tr><td>2022-02-17</td><td>106</td><td>112</td></tr>
+    <tr><td>2022-02-16</td><td>106</td><td>112</td></tr>
+    <tr><td>2022-02-15</td><td>106</td><td>112</td></tr>
+    <tr><td>2022-02-14</td><td>105,75</td><td>111,75</td></tr>
+    <tr><td>2022-02-11</td><td>105,25</td><td>111,25</td></tr>
+    <tr><td>2022-02-10</td><td>105,25</td><td>111,25</td></tr>
+    <tr><td>2022-02-09</td><td>105</td><td>111</td></tr>
+    <tr><td>2022-02-08</td><td>105</td><td>111</td></tr>
+    <tr><td>2022-02-07</td><td>105</td><td>111</td></tr>
+    <tr><td>2022-02-04</td><td>104,75</td><td>110,75</td></tr>
+    <tr><td>2022-02-03</td><td>104,5</td><td>110,5</td></tr>
+    <tr><td>2022-02-02</td><td>104,25</td><td>110,25</td></tr>
+    <tr><td>2022-02-01</td><td>104,25</td><td>110,25</td></tr>
+    <tr><td>2022-01-31</td><td>104,25</td><td>110,25</td></tr>
+    <tr><td>2022-01-28</td><td>104,25</td><td>110,25</td></tr>
+    <tr><td>2022-01-27</td><td>104</td><td>110</td></tr>
+    <tr><td>2022-01-26</td><td>103,5</td><td>109,5</td></tr>
+    <tr><td>2022-01-25</td><td>103,5</td><td>109,5</td></tr>
+    <tr><td>2022-01-24</td><td>103,5</td><td>109,5</td></tr>
+    <tr><td>2022-01-21</td><td>103,25</td><td>109,25</td></tr>
+    <tr><td>2022-01-20</td><td>103</td><td>109</td></tr>
+    <tr><td>2022-01-19</td><td>103</td><td>109</td></tr>
+    <tr><td>2022-01-18</td><td>103</td><td>109</td></tr>
+    <tr><td>2022-01-17</td><td>103</td><td>109</td></tr>
+    <tr><td>2022-01-14</td><td>102,75</td><td>108,75</td></tr>
+    <tr><td>2022-01-13</td><td>102,75</td><td>108,75</td></tr>
+    <tr><td>2022-01-12</td><td>102,75</td><td>108,75</td></tr>
+    <tr><td>2022-01-11</td><td>102,5</td><td>108,5</td></tr>
+    <tr><td>2022-01-10</td><td>102,5</td><td>108,5</td></tr>
+    <tr><td>2022-01-07</td><td>102,5</td><td>108,5</td></tr>
+    <tr><td>2022-01-06</td><td>102,25</td><td>108,25</td></tr>
+    <tr><td>2022-01-05</td><td>102</td><td>108</td></tr>
+    <tr><td>2022-01-04</td><td>102</td><td>108</td></tr>
+    <tr><td>2022-01-03</td><td>102</td><td>108</td></tr>
+    <tr><td>2021-12-30</td><td>101,75</td><td>107,75</td></tr>
+    <tr><td>2021-12-29</td><td>101,75</td><td>107,75</td></tr>
+    <tr><td>2021-12-28</td><td>101,75</td><td>107,75</td></tr>
+    <tr><td>2021-12-27</td><td>101,5</td><td>107,5</td></tr>
+    <tr><td>2021-12-23</td><td>101,25</td><td>107,25</td></tr>
+    <tr><td>2021-12-22</td><td>101,25</td><td>107,25</td></tr>
+    <tr><td>2021-12-21</td><td>101</td><td>107</td></tr>
+    <tr><td>2021-12-20</td><td>101</td><td>107</td></tr>
+    <tr><td>2021-12-17</td><td>101</td><td>107</td></tr>
+    <tr><td>2021-12-16</td><td>101</td><td>107</td></tr>
+    <tr><td>2021-12-15</td><td>101</td><td>107</td></tr>
+    <tr><td>2021-12-14</td><td>101</td><td>107</td></tr>
+    <tr><td>2021-12-13</td><td>100,75</td><td>106,75</td></tr>
+    <tr><td>2021-12-10</td><td>100,75</td><td>106,75</td></tr>
+    <tr><td>2021-12-09</td><td>100,75</td><td>106,75</td></tr>
+    <tr><td>2021-12-07</td><td>100,5</td><td>106,5</td></tr>
+    <tr><td>2021-12-06</td><td>100,25</td><td>106,25</td></tr>
+    <tr><td>2021-12-03</td><td>100,25</td><td>106,25</td></tr>
+    <tr><td>2021-12-02</td><td>100,25</td><td>106,25</td></tr>
+    <tr><td>2021-12-01</td><td>100,25</td><td>106,25</td></tr>
+    <tr><td>2021-11-30</td><td>100</td><td>106</td></tr>
+    <tr><td>2021-11-29</td><td>99,75</td><td>105,75</td></tr>
+    <tr><td>2021-11-26</td><td>99,75</td><td>105,75</td></tr>
+    <tr><td>2021-11-25</td><td>99,75</td><td>105,75</td></tr>
+    <tr><td>2021-11-24</td><td>99,75</td><td>105,75</td></tr>
+    <tr><td>2021-11-23</td><td>99,75</td><td>105,75</td></tr>
+    <tr><td>2021-11-19</td><td>99,5</td><td>105,5</td></tr>
+    <tr><td>2021-11-18</td><td>99,5</td><td>105,5</td></tr>
+    <tr><td>2021-11-17</td><td>99,5</td><td>105,5</td></tr>
+    <tr><td>2021-11-16</td><td>99,5</td><td>105,5</td></tr>
+    <tr><td>2021-11-15</td><td>99,5</td><td>105,5</td></tr>
+    <tr><td>2021-11-12</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-11</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-10</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-09</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-08</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-05</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-04</td><td>99,25</td><td>105,25</td></tr>
+    <tr><td>2021-11-03</td><td>99</td><td>105</td></tr>
+    <tr><td>2021-11-02</td><td>99</td><td>105</td></tr>
+    <tr><td>2021-11-01</td><td>99</td><td>105</td></tr>
+    <tr><td>2021-10-29</td><td>99</td><td>105</td></tr>
+    <tr><td>2021-10-28</td><td>99</td><td>105</td></tr>
+    <tr><td>2021-10-27</td><td>99</td><td>105</td></tr>
+    <tr><td>2021-10-26</td><td>98,75</td><td>104,75</td></tr>
+    <tr><td>2021-10-25</td><td>98,75</td><td>104,75</td></tr>
+    <tr><td>2021-10-22</td><td>98,75</td><td>104,75</td></tr>
+    <tr><td>2021-10-21</td><td>98,75</td><td>104,75</td></tr>
+    <tr><td>2021-10-20</td><td>98,75</td><td>104,75</td></tr>
+    <tr><td>2021-10-19</td><td>98,75</td><td>104,75</td></tr>
+    <tr><td>2021-10-18</td><td>98,5</td><td>104,5</td></tr>
+    <tr><td>2021-10-15</td><td>98,5</td><td>104,5</td></tr>
+    <tr><td>2021-10-14</td><td>98,25</td><td>104,25</td></tr>
+    <tr><td>2021-10-13</td><td>98,25</td><td>104,25</td></tr>
+    <tr><td>2021-10-12</td><td>98,25</td><td>104,25</td></tr>
+    <tr><td>2021-10-07</td><td>98,25</td><td>104,25</td></tr>
+    <tr><td>2021-10-06</td><td>98,25</td><td>104,25</td></tr>
+    <tr><td>2021-10-05</td><td>98,25</td><td>104,25</td></tr>
+    <tr><td>2021-10-04</td><td>98</td><td>104</td></tr>
+    <tr><td>2021-10-01</td><td>98</td><td>104</td></tr>
+    <tr><td>2021-09-30</td><td>98</td><td>104</td></tr>
+    <tr><td>2021-09-29</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-28</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-27</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-24</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-23</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-22</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-21</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-20</td><td>97,75</td><td>103,75</td></tr>
+    <tr><td>2021-09-17</td><td>97,5</td><td>103,5</td></tr>
+    <tr><td>2021-09-16</td><td>97,5</td><td>103,5</td></tr>
+    <tr><td>2021-09-15</td><td>97,5</td><td>103,5</td></tr>
+    <tr><td>2021-09-14</td><td>97,25</td><td>103,25</td></tr>
+    <tr><td>2021-09-13</td><td>97,25</td><td>103,25</td></tr>
+    <tr><td>2021-09-10</td><td>97,25</td><td>103,25</td></tr>
+    <tr><td>2021-09-09</td><td>97,25</td><td>103,25</td></tr>
+    <tr><td>2021-09-08</td><td>97,25</td><td>103,25</td></tr>
+    <tr><td>2021-09-07</td><td>97</td><td>103</td></tr>
+    <tr><td>2021-09-06</td><td>97</td><td>103</td></tr>
+    <tr><td>2021-09-03</td><td>97</td><td>103</td></tr>
+    <tr><td>2021-09-02</td><td>97</td><td>103</td></tr>
+    <tr><td>2021-09-01</td><td>97</td><td>103</td></tr>
+    <tr><td>2021-08-31</td><td>96,75</td><td>102,75</td></tr>
+    <tr><td>2021-08-30</td><td>96,75</td><td>102,75</td></tr>
+    <tr><td>2021-08-27</td><td>96,75</td><td>102,75</td></tr>
+    <tr><td>2021-08-26</td><td>96,75</td><td>102,75</td></tr>
+    <tr><td>2021-08-25</td><td>96,5</td><td>102,5</td></tr>
+    <tr><td>2021-08-24</td><td>96,5</td><td>102,5</td></tr>
+    <tr><td>2021-08-23</td><td>96,5</td><td>102,5</td></tr>
+    <tr><td>2021-08-20</td><td>96,5</td><td>102,5</td></tr>
+    <tr><td>2021-08-19</td><td>96,5</td><td>102,5</td></tr>
+    <tr><td>2021-08-18</td><td>96,25</td><td>102,25</td></tr>
+    <tr><td>2021-08-17</td><td>96,25</td><td>102,25</td></tr>
+    <tr><td>2021-08-13</td><td>96,25</td><td>102,25</td></tr>
+    <tr><td>2021-08-12</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-11</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-10</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-09</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-06</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-05</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-04</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-03</td><td>96</td><td>102</td></tr>
+    <tr><td>2021-08-02</td><td>95,75</td><td>101,75</td></tr>
+    <tr><td>2021-07-30</td><td>95,75</td><td>101,75</td></tr>
+    <tr><td>2021-07-29</td><td>95,75</td><td>101,75</td></tr>
+    <tr><td>2021-07-28</td><td>95,75</td><td>101,75</td></tr>
+    <tr><td>2021-07-27</td><td>95,75</td><td>101,75</td></tr>
+    <tr><td>2021-07-26</td><td>95,5</td><td>101,5</td></tr>
+    <tr><td>2021-07-23</td><td>95,5</td><td>101,5</td></tr>
+    <tr><td>2021-07-22</td><td>95,5</td><td>101,5</td></tr>
+    <tr><td>2021-07-21</td><td>95,5</td><td>101,5</td></tr>
+    <tr><td>2021-07-20</td><td>95,5</td><td>101,5</td></tr>
+    <tr><td>2021-07-19</td><td>95,5</td><td>101,5</td></tr>
+    <tr><td>2021-07-16</td><td>95,25</td><td>101,25</td></tr>
+    <tr><td>2021-07-15</td><td>95,25</td><td>101,25</td></tr>
+    <tr><td>2021-07-14</td><td>95,25</td><td>101,25</td></tr>
+    <tr><td>2021-07-13</td><td>95,25</td><td>101,25</td></tr>
+    <tr><td>2021-07-12</td><td>95</td><td>101</td></tr>
+    <tr><td>2021-07-08</td><td>95</td><td>101</td></tr>
+    <tr><td>2021-07-07</td><td>95</td><td>101</td></tr>
+    <tr><td>2021-07-06</td><td>95</td><td>101</td></tr>
+    <tr><td>2021-07-05</td><td>95</td><td>101</td></tr>
+    <tr><td>2021-07-02</td><td>94,75</td><td>100,75</td></tr>
+    <tr><td>2021-07-01</td><td>94,75</td><td>100,75</td></tr>
+    <tr><td>2021-06-30</td><td>94,75</td><td>100,75</td></tr>
+    <tr><td>2021-06-29</td><td>94,75</td><td>100,75</td></tr>
+    <tr><td>2021-06-28</td><td>94,5</td><td>100,5</td></tr>
+    <tr><td>2021-06-25</td><td>94,5</td><td>100,5</td></tr>
+    <tr><td>2021-06-24</td><td>94,5</td><td>100,5</td></tr>
+    <tr><td>2021-06-23</td><td>94,5</td><td>100,5</td></tr>
+    <tr><td>2021-06-22</td><td>94,25</td><td>100,25</td></tr>
+    <tr><td>2021-06-18</td><td>94,25</td><td>100,25</td></tr>
+    <tr><td>2021-06-17</td><td>94,25</td><td>100,25</td></tr>
+    <tr><td>2021-06-16</td><td>94,25</td><td>100,25</td></tr>
+    <tr><td>2021-06-15</td><td>94,25</td><td>100,25</td></tr>
+    <tr><td>2021-06-14</td><td>94,25</td><td>100,25</td></tr>
+    <tr><td>2021-06-11</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-10</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-09</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-08</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-07</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-04</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-03</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-02</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-06-01</td><td>94</td><td>100</td></tr>
+    <tr><td>2021-05-31</td><td>93,75</td><td>99,75</td></tr>
+    <tr><td>2021-05-28</td><td>93,75</td><td>99,75</td></tr>
+    <tr><td>2021-05-27</td><td>93,75</td><td>99,75</td></tr>
+    <tr><td>2021-05-26</td><td>93,5</td><td>99,5</td></tr>
+    <tr><td>2021-05-21</td><td>93,5</td><td>99,5</td></tr>
+    <tr><td>2021-05-20</td><td>93,25</td><td>99,25</td></tr>
+    <tr><td>2021-05-19</td><td>93,25</td><td>99,25</td></tr>
+    <tr><td>2021-05-18</td><td>93,25</td><td>99,25</td></tr>
+    <tr><td>2021-05-17</td><td>93,25</td><td>99,25</td></tr>
+    <tr><td>2021-05-14</td><td>93</td><td>99</td></tr>
+    <tr><td>2021-05-13</td><td>93</td><td>99</td></tr>
+    <tr><td>2021-05-12</td><td>93</td><td>99</td></tr>
+    <tr><td>2021-05-11</td><td>93</td><td>99</td></tr>
+    <tr><td>2021-05-10</td><td>93</td><td>99</td></tr>
+    <tr><td>2021-05-07</td><td>93</td><td>99</td></tr>
+    <tr><td>2021-05-06</td><td>92,75</td><td>98,75</td></tr>
+    <tr><td>2021-05-05</td><td>92,75</td><td>98,75</td></tr>
+    <tr><td>2021-05-04</td><td>92,75</td><td>98,75</td></tr>
+    <tr><td>2021-05-03</td><td>92,75</td><td>98,75</td></tr>
+    <tr><td>2021-04-30</td><td>92,5</td><td>98,5</td></tr>
+    <tr><td>2021-04-29</td><td>92,5</td><td>98,5</td></tr>
+    <tr><td>2021-04-28</td><td>92,5</td><td>98,5</td></tr>
+    <tr><td>2021-04-27</td><td>92,5</td><td>98,5</td></tr>
+    <tr><td>2021-04-26</td><td>92,5</td><td>98,5</td></tr>
+    <tr><td>2021-04-23</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-22</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-21</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-20</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-19</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-16</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-15</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-14</td><td>92,25</td><td>98,25</td></tr>
+    <tr><td>2021-04-13</td><td>92</td><td>98</td></tr>
+    <tr><td>2021-04-12</td><td>92</td><td>98</td></tr>
+    <tr><td>2021-04-09</td><td>92</td><td>98</td></tr>
+    <tr><td>2021-04-08</td><td>92</td><td>98</td></tr>
+    <tr><td>2021-04-07</td><td>92</td><td>98</td></tr>
+    <tr><td>2021-04-06</td><td>91,75</td><td>97,75</td></tr>
+    <tr><td>2021-04-05</td><td>91,75</td><td>97,75</td></tr>
+    <tr><td>2021-03-31</td><td>91,5</td><td>97,5</td></tr>
+    <tr><td>2021-03-30</td><td>91,25</td><td>97,25</td></tr>
+    <tr><td>2021-03-29</td><td>91,25</td><td>97,25</td></tr>
+    <tr><td>2021-03-26</td><td>91,25</td><td>97,25</td></tr>
+    <tr><td>2021-03-25</td><td>91</td><td>97</td></tr>
+    <tr><td>2021-03-23</td><td>91</td><td>97</td></tr>
+    <tr><td>2021-03-22</td><td>90,75</td><td>96,75</td></tr>
+    <tr><td>2021-03-19</td><td>90,5</td><td>96,5</td></tr>
+    <tr><td>2021-03-18</td><td>90,5</td><td>96,5</td></tr>
+    <tr><td>2021-03-17</td><td>90,25</td><td>96,25</td></tr>
+    <tr><td>2021-03-16</td><td>90,25</td><td>96,25</td></tr>
+    <tr><td>2021-03-15</td><td>90</td><td>96</td></tr>
+    <tr><td>2021-03-12</td><td>89,75</td><td>95,75</td></tr>
+    <tr><td>2021-03-11</td><td>89,75</td><td>95,75</td></tr>
+    <tr><td>2021-03-10</td><td>89,5</td><td>95,5</td></tr>
+    <tr><td>2021-03-09</td><td>89,5</td><td>95,5</td></tr>
+    <tr><td>2021-03-08</td><td>89,25</td><td>95,25</td></tr>
+    <tr><td>2021-03-05</td><td>89</td><td>95</td></tr>
+    <tr><td>2021-03-04</td><td>89</td><td>95</td></tr>
+    <tr><td>2021-03-03</td><td>89</td><td>95</td></tr>
+    <tr><td>2021-03-02</td><td>89</td><td>95</td></tr>
+    <tr><td>2021-03-01</td><td>88,75</td><td>94,75</td></tr>
+    <tr><td>2021-02-26</td><td>88,5</td><td>94,5</td></tr>
+    <tr><td>2021-02-25</td><td>88,5</td><td>94,5</td></tr>
+    <tr><td>2021-02-24</td><td>88,5</td><td>94,5</td></tr>
+    <tr><td>2021-02-23</td><td>88,25</td><td>94,25</td></tr>
+    <tr><td>2021-02-22</td><td>88,25</td><td>94,25</td></tr>
+    <tr><td>2021-02-19</td><td>88</td><td>94</td></tr>
+    <tr><td>2021-02-18</td><td>87,75</td><td>93,75</td></tr>
+    <tr><td>2021-02-17</td><td>87,75</td><td>93,75</td></tr>
+    <tr><td>2021-02-12</td><td>87,5</td><td>93,5</td></tr>
+    <tr><td>2021-02-11</td><td>87,5</td><td>93,5</td></tr>
+    <tr><td>2021-02-10</td><td>87,25</td><td>93,25</td></tr>
+    <tr><td>2021-02-09</td><td>87,25</td><td>93,25</td></tr>
+    <tr><td>2021-02-08</td><td>87,25</td><td>93,25</td></tr>
+    <tr><td>2021-02-05</td><td>87</td><td>93</td></tr>
+    <tr><td>2021-02-04</td><td>86,75</td><td>92,75</td></tr>
+    <tr><td>2021-02-03</td><td>86,5</td><td>92,5</td></tr>
+    <tr><td>2021-02-02</td><td>86,5</td><td>92,5</td></tr>
+    <tr><td>2021-02-01</td><td>86,5</td><td>92,5</td></tr>
+    <tr><td>2021-01-29</td><td>86,25</td><td>92,25</td></tr>
+    <tr><td>2021-01-28</td><td>86</td><td>92</td></tr>
+    <tr><td>2021-01-27</td><td>86</td><td>92</td></tr>
+    <tr><td>2021-01-26</td><td>86</td><td>92</td></tr>
+    <tr><td>2021-01-25</td><td>86</td><td>92</td></tr>
+    <tr><td>2021-01-22</td><td>85,75</td><td>91,75</td></tr>
+    <tr><td>2021-01-21</td><td>85,5</td><td>91,5</td></tr>
+    <tr><td>2021-01-20</td><td>85,25</td><td>91,25</td></tr>
+    <tr><td>2021-01-19</td><td>85,25</td><td>91,25</td></tr>
+    <tr><td>2021-01-18</td><td>85</td><td>91</td></tr>
+    <tr><td>2021-01-15</td><td>84,75</td><td>90,75</td></tr>
+    <tr><td>2021-01-14</td><td>84,75</td><td>90,75</td></tr>
+    <tr><td>2021-01-13</td><td>84,5</td><td>90,5</td></tr>
+    <tr><td>2021-01-12</td><td>84,5</td><td>90,5</td></tr>
+    <tr><td>2021-01-11</td><td>84,25</td><td>90,25</td></tr>
+    <tr><td>2021-01-08</td><td>84</td><td>90</td></tr>
+    <tr><td>2021-01-07</td><td>84</td><td>90</td></tr>
+    <tr><td>2021-01-06</td><td>83,75</td><td>89,75</td></tr>
+    <tr><td>2021-01-05</td><td>83,75</td><td>89,75</td></tr>
+    <tr><td>2021-01-04</td><td>83,5</td><td>89,5</td></tr>
+    <tr><td>2020-12-30</td><td>83,25</td><td>89,25</td></tr>
+    <tr><td>2020-12-29</td><td>83</td><td>89</td></tr>
+    <tr><td>2020-12-28</td><td>82,75</td><td>88,75</td></tr>
+    <tr><td>2020-12-23</td><td>82,5</td><td>88,5</td></tr>
+    <tr><td>2020-12-22</td><td>82,25</td><td>88,25</td></tr>
+    <tr><td>2020-12-21</td><td>82,25</td><td>88,25</td></tr>
+    <tr><td>2020-12-18</td><td>82</td><td>88</td></tr>
+    <tr><td>2020-12-17</td><td>81,75</td><td>87,75</td></tr>
+    <tr><td>2020-12-16</td><td>81,75</td><td>87,75</td></tr>
+    <tr><td>2020-12-15</td><td>81,75</td><td>87,75</td></tr>
+    <tr><td>2020-12-14</td><td>81,5</td><td>87,5</td></tr>
+    <tr><td>2020-12-11</td><td>81,5</td><td>87,5</td></tr>
+    <tr><td>2020-12-10</td><td>81,5</td><td>87,5</td></tr>
+    <tr><td>2020-12-09</td><td>81,25</td><td>87,25</td></tr>
+    <tr><td>2020-12-04</td><td>80,75</td><td>86,75</td></tr>
+    <tr><td>2020-12-03</td><td>80,75</td><td>86,75</td></tr>
+    <tr><td>2020-12-02</td><td>80,5</td><td>86,5</td></tr>
+    <tr><td>2020-12-01</td><td>80,5</td><td>86,5</td></tr>
+    <tr><td>2020-11-30</td><td>80,5</td><td>86,5</td></tr>
+    <tr><td>2020-11-27</td><td>80,25</td><td>86,25</td></tr>
+    <tr><td>2020-11-26</td><td>80</td><td>86</td></tr>
+    <tr><td>2020-11-25</td><td>79,75</td><td>85,75</td></tr>
+    <tr><td>2020-11-24</td><td>79,75</td><td>85,75</td></tr>
+    <tr><td>2020-11-20</td><td>79,5</td><td>85,5</td></tr>
+    <tr><td>2020-11-19</td><td>79,5</td><td>85,5</td></tr>
+    <tr><td>2020-11-18</td><td>79,25</td><td>85,25</td></tr>
+    <tr><td>2020-11-17</td><td>79,25</td><td>85,25</td></tr>
+    <tr><td>2020-11-16</td><td>79,25</td><td>85,25</td></tr>
+    <tr><td>2020-11-13</td><td>79</td><td>85</td></tr>
+    <tr><td>2020-11-12</td><td>79</td><td>85</td></tr>
+    <tr><td>2020-11-11</td><td>78,75</td><td>84,75</td></tr>
+    <tr><td>2020-11-10</td><td>78,75</td><td>84,75</td></tr>
+    <tr><td>2020-11-09</td><td>78,5</td><td>84,5</td></tr>
+    <tr><td>2020-11-05</td><td>78,25</td><td>84,25</td></tr>
+    <tr><td>2020-11-04</td><td>78,25</td><td>84,25</td></tr>
+    <tr><td>2020-11-03</td><td>78</td><td>84</td></tr>
+    <tr><td>2020-11-02</td><td>77,75</td><td>83,75</td></tr>
+    <tr><td>2020-10-30</td><td>77,5</td><td>83,5</td></tr>
+    <tr><td>2020-10-29</td><td>77,5</td><td>83,5</td></tr>
+    <tr><td>2020-10-28</td><td>77,5</td><td>83,5</td></tr>
+    <tr><td>2020-10-27</td><td>77,5</td><td>83,5</td></tr>
+    <tr><td>2020-10-26</td><td>77,5</td><td>83,5</td></tr>
+    <tr><td>2020-10-23</td><td>77,5</td><td>83,5</td></tr>
+    <tr><td>2020-10-22</td><td>77,25</td><td>83,25</td></tr>
+    <tr><td>2020-10-21</td><td>77</td><td>83</td></tr>
+    <tr><td>2020-10-20</td><td>76,75</td><td>82,75</td></tr>
+    <tr><td>2020-10-19</td><td>76,5</td><td>82,5</td></tr>
+    <tr><td>2020-10-16</td><td>76,5</td><td>82,5</td></tr>
+    <tr><td>2020-10-15</td><td>76,5</td><td>82,5</td></tr>
+    <tr><td>2020-10-14</td><td>76,25</td><td>82,25</td></tr>
+    <tr><td>2020-10-13</td><td>76,25</td><td>82,25</td></tr>
+    <tr><td>2020-10-09</td><td>76</td><td>82</td></tr>
+    <tr><td>2020-10-08</td><td>76</td><td>82</td></tr>
+    <tr><td>2020-10-07</td><td>76</td><td>82</td></tr>
+    <tr><td>2020-10-06</td><td>77</td><td>82</td></tr>
+    <tr><td>2020-10-05</td><td>76,75</td><td>81,75</td></tr>
+    <tr><td>2020-10-02</td><td>76,5</td><td>81,5</td></tr>
+    <tr><td>2020-10-01</td><td>75,25</td><td>80,25</td></tr>
+    <tr><td>2020-09-30</td><td>75</td><td>80</td></tr>
+    <tr><td>2020-09-29</td><td>75</td><td>80</td></tr>
+    <tr><td>2020-09-28</td><td>74,75</td><td>79,75</td></tr>
+    <tr><td>2020-09-25</td><td>74,75</td><td>79,75</td></tr>
+    <tr><td>2020-09-24</td><td>74,75</td><td>79,75</td></tr>
+    <tr><td>2020-09-23</td><td>74,5</td><td>79,5</td></tr>
+    <tr><td>2020-09-22</td><td>74,5</td><td>79,5</td></tr>
+    <tr><td>2020-09-21</td><td>74,5</td><td>79,5</td></tr>
+    <tr><td>2020-09-18</td><td>74,25</td><td>79,25</td></tr>
+    <tr><td>2020-09-17</td><td>74,25</td><td>79,25</td></tr>
+    <tr><td>2020-09-16</td><td>74,25</td><td>79,25</td></tr>
+    <tr><td>2020-09-15</td><td>74,25</td><td>79,25</td></tr>
+    <tr><td>2020-09-14</td><td>74</td><td>79</td></tr>
+    <tr><td>2020-09-11</td><td>74</td><td>79</td></tr>
+    <tr><td>2020-09-10</td><td>74</td><td>79</td></tr>
+    <tr><td>2020-09-09</td><td>73,75</td><td>78,75</td></tr>
+    <tr><td>2020-09-08</td><td>73,75</td><td>78,75</td></tr>
+    <tr><td>2020-09-07</td><td>73,5</td><td>78,5</td></tr>
+    <tr><td>2020-09-04</td><td>73,5</td><td>78,5</td></tr>
+    <tr><td>2020-09-03</td><td>73,25</td><td>78,25</td></tr>
+    <tr><td>2020-09-02</td><td>73,25</td><td>78,25</td></tr>
+    <tr><td>2020-09-01</td><td>73,25</td><td>78,25</td></tr>
+    <tr><td>2020-08-31</td><td>73</td><td>78</td></tr>
+    <tr><td>2020-08-28</td><td>73</td><td>78</td></tr>
+    <tr><td>2020-08-27</td><td>72,75</td><td>77,75</td></tr>
+    <tr><td>2020-08-26</td><td>72,75</td><td>77,75</td></tr>
+    <tr><td>2020-08-25</td><td>72,75</td><td>77,75</td></tr>
+    <tr><td>2020-08-24</td><td>72,75</td><td>77,75</td></tr>
+    <tr><td>2020-08-21</td><td>72,5</td><td>77,5</td></tr>
+    <tr><td>2020-08-20</td><td>72,5</td><td>77,5</td></tr>
+    <tr><td>2020-08-19</td><td>72,5</td><td>77,5</td></tr>
+    <tr><td>2020-08-18</td><td>72,5</td><td>77,5</td></tr>
+    <tr><td>2020-08-14</td><td>72,25</td><td>77,25</td></tr>
+    <tr><td>2020-08-13</td><td>72,25</td><td>77,25</td></tr>
+    <tr><td>2020-08-12</td><td>72</td><td>77</td></tr>
+    <tr><td>2020-08-11</td><td>72</td><td>77</td></tr>
+    <tr><td>2020-08-10</td><td>72</td><td>77</td></tr>
+    <tr><td>2020-08-07</td><td>71,75</td><td>76,75</td></tr>
+    <tr><td>2020-08-06</td><td>71,75</td><td>76,75</td></tr>
+    <tr><td>2020-08-05</td><td>71,75</td><td>76,75</td></tr>
+    <tr><td>2020-08-04</td><td>71,5</td><td>76,5</td></tr>
+    <tr><td>2020-08-03</td><td>71,5</td><td>76,5</td></tr>
+    <tr><td>2020-07-31</td><td>71,25</td><td>76,25</td></tr>
+    <tr><td>2020-07-30</td><td>71</td><td>76</td></tr>
+    <tr><td>2020-07-29</td><td>71</td><td>76</td></tr>
+    <tr><td>2020-07-28</td><td>71</td><td>76</td></tr>
+    <tr><td>2020-07-27</td><td>70,75</td><td>75,75</td></tr>
+    <tr><td>2020-07-24</td><td>70,75</td><td>75,75</td></tr>
+    <tr><td>2020-07-23</td><td>70,5</td><td>75,5</td></tr>
+    <tr><td>2020-07-22</td><td>70,5</td><td>75,5</td></tr>
+    <tr><td>2020-07-21</td><td>70,5</td><td>75,5</td></tr>
+    <tr><td>2020-07-20</td><td>70,5</td><td>75,5</td></tr>
+    <tr><td>2020-07-17</td><td>70,25</td><td>75,25</td></tr>
+    <tr><td>2020-07-16</td><td>70</td><td>75</td></tr>
+    <tr><td>2020-07-15</td><td>70</td><td>75</td></tr>
+    <tr><td>2020-07-14</td><td>70</td><td>75</td></tr>
+    <tr><td>2020-07-13</td><td>69,5</td><td>74,5</td></tr>
+    <tr><td>2020-07-08</td><td>69,5</td><td>74,5</td></tr>
+    <tr><td>2020-07-07</td><td>69</td><td>74</td></tr>
+    <tr><td>2020-07-06</td><td>69</td><td>74</td></tr>
+    <tr><td>2020-07-03</td><td>69</td><td>74</td></tr>
+    <tr><td>2020-07-02</td><td>68,75</td><td>73,75</td></tr>
+    <tr><td>2020-07-01</td><td>68,5</td><td>73,5</td></tr>
+    <tr><td>2020-06-30</td><td>68,5</td><td>73,5</td></tr>
+    <tr><td>2020-06-29</td><td>68,5</td><td>73,5</td></tr>
+    <tr><td>2020-06-26</td><td>68</td><td>73</td></tr>
+    <tr><td>2020-06-25</td><td>68</td><td>73</td></tr>
+    <tr><td>2020-06-24</td><td>68</td><td>73</td></tr>
+    <tr><td>2020-06-23</td><td>68</td><td>73</td></tr>
+    <tr><td>2020-06-22</td><td>67,5</td><td>72,5</td></tr>
+    <tr><td>2020-06-19</td><td>67,5</td><td>72,5</td></tr>
+    <tr><td>2020-06-18</td><td>67,5</td><td>72,5</td></tr>
+    <tr><td>2020-06-17</td><td>67,25</td><td>72,25</td></tr>
+    <tr><td>2020-06-16</td><td>67,25</td><td>72,25</td></tr>
+    <tr><td>2020-06-12</td><td>67</td><td>72</td></tr>
+    <tr><td>2020-06-11</td><td>66,5</td><td>71,5</td></tr>
+    <tr><td>2020-06-10</td><td>66,5</td><td>71,5</td></tr>
+    <tr><td>2020-06-09</td><td>66,5</td><td>71,5</td></tr>
+    <tr><td>2020-06-08</td><td>65,75</td><td>70,75</td></tr>
+    <tr><td>2020-06-05</td><td>65,75</td><td>70,75</td></tr>
+    <tr><td>2020-06-04</td><td>65,75</td><td>70,75</td></tr>
+    <tr><td>2020-06-03</td><td>65,5</td><td>70,5</td></tr>
+    <tr><td>2020-06-02</td><td>65,5</td><td>70,5</td></tr>
+    <tr><td>2020-06-01</td><td>65,5</td><td>70,5</td></tr>
+    <tr><td>2020-05-29</td><td>65,5</td><td>70,5</td></tr>
+    <tr><td>2020-05-28</td><td>65,25</td><td>70,25</td></tr>
+    <tr><td>2020-05-27</td><td>65,25</td><td>70,25</td></tr>
+    <tr><td>2020-05-26</td><td>65,25</td><td>70,25</td></tr>
+    <tr><td>2020-05-22</td><td>65,25</td><td>70,25</td></tr>
+    <tr><td>2020-05-21</td><td>65</td><td>70</td></tr>
+    <tr><td>2020-05-20</td><td>65</td><td>70</td></tr>
+    <tr><td>2020-05-19</td><td>65</td><td>70</td></tr>
+    <tr><td>2020-05-18</td><td>65</td><td>70</td></tr>
+    <tr><td>2020-05-15</td><td>64,75</td><td>69,75</td></tr>
+    <tr><td>2020-05-14</td><td>64,75</td><td>69,75</td></tr>
+    <tr><td>2020-05-13</td><td>64,75</td><td>69,75</td></tr>
+    <tr><td>2020-05-12</td><td>64,25</td><td>69,25</td></tr>
+    <tr><td>2020-05-11</td><td>64,25</td><td>69,25</td></tr>
+    <tr><td>2020-05-08</td><td>64,25</td><td>69,25</td></tr>
+    <tr><td>2020-05-07</td><td>64,25</td><td>69,25</td></tr>
+    <tr><td>2020-05-06</td><td>64,25</td><td>69,25</td></tr>
+    <tr><td>2020-05-05</td><td>63,75</td><td>68,75</td></tr>
+    <tr><td>2020-05-04</td><td>63,75</td><td>68,75</td></tr>
+    <tr><td>2020-04-30</td><td>63,75</td><td>68,75</td></tr>
+    <tr><td>2020-04-29</td><td>63,5</td><td>68,5</td></tr>
+    <tr><td>2020-04-28</td><td>63,5</td><td>68,5</td></tr>
+    <tr><td>2020-04-27</td><td>63,25</td><td>68,25</td></tr>
+    <tr><td>2020-04-24</td><td>63,25</td><td>68,25</td></tr>
+    <tr><td>2020-04-23</td><td>62,75</td><td>67,75</td></tr>
+    <tr><td>2020-04-22</td><td>62,75</td><td>67,75</td></tr>
+    <tr><td>2020-04-21</td><td>62,75</td><td>67,75</td></tr>
+    <tr><td>2020-04-20</td><td>62,5</td><td>67,5</td></tr>
+    <tr><td>2020-04-17</td><td>62,25</td><td>67,25</td></tr>
+    <tr><td>2020-04-16</td><td>62,25</td><td>67,25</td></tr>
+    <tr><td>2020-04-15</td><td>61,75</td><td>66,75</td></tr>
+    <tr><td>2020-04-14</td><td>61,75</td><td>66,75</td></tr>
+    <tr><td>2020-04-13</td><td>61,75</td><td>66,75</td></tr>
+    <tr><td>2020-04-08</td><td>61,5</td><td>66,5</td></tr>
+    <tr><td>2020-04-07</td><td>61,5</td><td>66,5</td></tr>
+    <tr><td>2020-04-06</td><td>61,25</td><td>66,25</td></tr>
+    <tr><td>2020-04-03</td><td>61</td><td>66</td></tr>
+    <tr><td>2020-04-02</td><td>61</td><td>66</td></tr>
+    <tr><td>2020-04-01</td><td>61</td><td>66</td></tr>
+    <tr><td>2020-03-30</td><td>60,75</td><td>65,75</td></tr>
+    <tr><td>2020-03-27</td><td>60,5</td><td>65,5</td></tr>
+    <tr><td>2020-03-26</td><td>60,25</td><td>65,25</td></tr>
+    <tr><td>2020-03-25</td><td>60,25</td><td>65,25</td></tr>
+    <tr><td>2020-03-20</td><td>60</td><td>65</td></tr>
+    <tr><td>2020-03-19</td><td>60</td><td>65</td></tr>
+    <tr><td>2020-03-18</td><td>60</td><td>65</td></tr>
+    <tr><td>2020-03-17</td><td>59,5</td><td>64,5</td></tr>
+    <tr><td>2020-03-16</td><td>59,5</td><td>64,5</td></tr>
+    <tr><td>2020-03-13</td><td>59,5</td><td>64,5</td></tr>
+    <tr><td>2020-03-12</td><td>59,5</td><td>64,5</td></tr>
+    <tr><td>2020-03-11</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-10</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-09</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-06</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-05</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-04</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-03</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-03-02</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-02-28</td><td>59</td><td>64</td></tr>
+    <tr><td>2020-02-27</td><td>58,75</td><td>63,75</td></tr>
+    <tr><td>2020-02-26</td><td>58,75</td><td>63,75</td></tr>
+    <tr><td>2020-02-21</td><td>58,5</td><td>63,5</td></tr>
+    <tr><td>2020-02-20</td><td>58,5</td><td>63,5</td></tr>
+    <tr><td>2020-02-19</td><td>58,5</td><td>63,5</td></tr>
+    <tr><td>2020-02-18</td><td>58,25</td><td>63,25</td></tr>
+    <tr><td>2020-02-17</td><td>58,25</td><td>63,25</td></tr>
+    <tr><td>2020-02-14</td><td>58,25</td><td>63,25</td></tr>
+    <tr><td>2020-02-13</td><td>58,25</td><td>63,25</td></tr>
+    <tr><td>2020-02-12</td><td>58,25</td><td>63,25</td></tr>
+    <tr><td>2020-02-11</td><td>58,25</td><td>63,25</td></tr>
+    <tr><td>2020-02-10</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-02-07</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-02-06</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-02-05</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-02-04</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-02-03</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-31</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-30</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-29</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-28</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-27</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-24</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-23</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-22</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-21</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-20</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-17</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-16</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-15</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-14</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-13</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-10</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-09</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-08</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-07</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-06</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-03</td><td>58</td><td>63</td></tr>
+    <tr><td>2020-01-02</td><td>58</td><td>63</td></tr>
+   </tbody></table>
+</tbody>
+</table>
+
+<script src="D:\CODO A CODO\Trabajo Final/Filtrar fechas.js"></script>
+
+</body>
+
+</html>
